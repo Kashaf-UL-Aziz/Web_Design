@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.site-header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  color: white;
+}
+
+nav .logo {
+  width: 50%;
+}
+
+.logo h1 {
+  
+  line-height: 100px;
+  padding-left: 50px;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu ul {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu ul li:hover {
+  transform: translateY(-5px);
+  color: black;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+}
+
+.leftside {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.leftside img {
+  width: 550px;
+  height: 450px;
+}
+
+.rightside {
+  width: 55%;
+  height: 450px;
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+}
+
+.rightside h1 {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.rightside p {
+  font-size: 1.1rem;
+  padding: 30px 0;
+}
+
+.rightside button {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  border-radius: 4px;
+  padding: 15px 30px;
+}
+
+.rightside button:hover {
+  background: linear-gradient(57deg, #1e4d92, #00c6a7);
+}
+
+ @media (max-width: 1100px) {
+  .leftside img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    display: block;
+  }
+  .leftside {
+    width: 100%;
+  }
+  .rightside {
+    width: 100vw;
+    margin: 10px 0;
+    padding: 0px;
+  }
+  .rightside p {
+    font-size: 10px;
+    padding: 0px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  .site-header {
+    height: 100%;
+  }
+.logo h1 {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 668px) {
+    .leftside img {
+        width: 250px;
+        margin-top: 30px;
+      }
+  nav {
+    display: block;
+  }
+  nav .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .menu {
+    max-width: 360px;
+    margin: auto;
+  }
+
+  .menu ul li {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .menu ul li {
+    font-size: 5px;
+    padding: 4px;
+  }
+}
